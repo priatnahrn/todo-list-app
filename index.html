@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App - Save Your Days to Make Your Life Easier</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/09c470be8b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="header">
+      <div class="app-name">
+        <h1 class="title">Todo List App</h1>
+        <p class="subtitle">Save Your Days to Make Your Life Easier</p>
+      </div>
+      <a href="history.html" class="history">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="date-time">
+      <div class="item">
+        <p class="label">Day</p>
+        <p id="current-day">Monday</p>
+      </div>
+      <div class="item">
+        <p class="label">Time</p>
+        <p id="current-time">12:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search tasks...">
+      <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="filter-btn">
+      <button id="all-btn" class="active">All</button>
+      <button id="completed-btn">Completed</button>
+      <button id="uncompleted-btn">Uncompleted</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="todo-header">
+      <h2 class="title">Your Tasks</h2>
+      <button id="clear-all-btn">Clear All</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="todo">
+      <ul id="todoList">
+        <!-- <li id="todoItem"></li> -->
+      </ul>
+    </div>
+    <div class="empty-state" id="emptyState">
+      <i class="fa-solid fa-square-plus" id="empty-icon"></i>
+      <p class="subtitle" id="empty-todo">No tasks found. Add a new task.</p>
+      <div class="add-todo">
+        <button id="addTodo">Add Todo</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+        background-color: white;
+    } 
+
+    body {
+        border: none;
+        margin: 1.5rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(26, 42, 65, 0.1);
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        padding: 0;
+        background-color: white;
+    }
+
+    .back-btn {
+        margin-bottom: 16px;
+    
+    }
+    .back-btn a {
+        text-decoration: none;
+        color: #27374D;
+        font-size: 1em;
+        cursor: pointer; 
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .back-btn i {
+        margin-right: 5px;
+        font-size: 1.2em;
+        color: #27374D;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;   
+        background-color: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    i{
+        font-size: 1.15em;
+        color: #27374D;
+        cursor: pointer;
+    }
+  
+    .app-name {
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        line-height: 1.15;
+        text-align: left;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    .title{
+        font-family: "Urbanist", sans-serif;
+        font-size: 1.5em;
+        font-style: bold;
+        color: #27374D;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color: #526D82;
+    }
+
+
+
+    .date-time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        width: 100%;
+       
+        gap: 10px;
+    }
+    .item {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 1em;
+        color: #526D82;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 5px 0;
+        width: 50%;
+        text-align: center;
+        
+    }
+    .label {
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color: #526D82;
+        margin: 0;
+    }
+
+    #current-day, #current-time {
+        font-weight: bold;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 1.15em;
+        color: #27374D;
+        margin-top: 5px;
+    }
+
+    .search-bar {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    #search-input {
+        width: 100%;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 0.8em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #526D82;
+        background-color: white;
+    }
+
+    #search-input:focus {
+        border-color: #27374D;
+        box-shadow: 0 0 5px rgba(39, 55, 77, 0.2);
+        outline: none;
+    }
+
+    #search-button {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #search-button i {
+        font-size: 1.2em;
+        color: #526D82;
+    }
+
+    .filter-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .filter-btn button {
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 0.8em;
+        color: #526D82;
+        background-color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        flex-grow: 1;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .filter-btn button:hover {
+        background-color: #27374D;
+        color: white;
+    }
+
+    .filter-btn button.active {
+        background-color: #27374D;
+        color: white;
+        font-weight: 600;
+    }
+
+    .todo-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+    
+    .todo-header button {
+        cursor: pointer;
+        font-size: 0.8em;
+        color: #526D82;
+        transition: background-color 0.3s, color 0.3s;
+        margin: 0;
+        border: none;
+    }
+
+    .todo-header button:hover {
+        color: #27374D;
+        font-weight: 600;
+        transform: scale(1.00);
+    }
+
+   .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #526D82;
+    text-align: center;
+    border: 0.1em dashed #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    ;
+   }
+
+   #empty-icon {
+    font-size: 2em;
+    color: #27374D;
+   }
+   
+
+   .add-todo button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1em;
+    color: #526D82;
+    transition: background-color 0.3s, color 0.3s;
+   }
+
+   .add-todo button:hover {
+
+    background-color: #27374D;
+    color: white;
+   }
+
+
+
+
+    
+
+}

@@ -1,4 +1,207 @@
+    * {
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 600px;
+        font-family: 'Urbanist', sans-serif;
+        background-color: white;
+    } 
 
+    body {
+        border: none;
+        margin: 1.5rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(26, 42, 65, 0.1);
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        padding: 0;
+        background-color: white;
+    }
+
+    .back-btn {
+        margin-bottom: 16px;
+    
+    }
+    .back-btn a {
+        text-decoration: none;
+        color: #27374D;
+        font-size: 1em;
+        cursor: pointer; 
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .back-btn i {
+        margin-right: 5px;
+        font-size: 1em;
+        font-weight: 600;
+        color: #27374D;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;   
+        background-color: white;
+    }
+
+    .app-name {
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        line-height: 1.15;
+        text-align: left;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    .title{
+        font-family: "Urbanist", sans-serif;
+        font-size: 1.5em;
+        font-style: bold;
+        color: #27374D;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color: #526D82;
+    }
+
+
+    form{
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .main, .additional {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .name-group {
+        font-family: "Urbanist", sans-serif;
+        font-size: 1.2em;
+        font-style: bold;
+        color: #27374D;
+        margin-bottom: 12px;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+    }
+
+    .form-group label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color: #526D82;
+        font-weight: 500;
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
+
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 0.8em;
+        color: #27374D;
+        background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .form-group textarea {
+        resize: vertical;
+        height: 120px;
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+        border-color: #27374D;
+        box-shadow: 0 0 5px rgba(39, 55, 77, 0.3);
+        outline: none;
+    }
+
+    .form-group select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 0.8em;
+        color: #27374D;
+        background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center; 
+        background-size: 16px 16px;           
+        color: #27374D;                     
+    }
+    .form-group select:focus {
+        border-color: #27374D;
+        box-shadow: 0 0 5px rgba(39, 55, 77, 0.3);
+        outline: none;
+    }
+
+    .form-group select option {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        color: #27374D;
+        background-color: white;
+    }
+
+
+    .form-group select option:checked {
+        background-color: #526D82;
+        color: white;
+        font-weight: bold;
+    }
+
+    .form-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .form-btn button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #27374D;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+    }
+
+    .form-btn button:hover {
+        background-color: #526D82;
+    }
+
+    
+
+
+
+
+    
 
 @media only screen and (max-width: 600px) {
     * {
@@ -41,7 +244,8 @@
 
     .back-btn i {
         margin-right: 5px;
-        font-size: 1.2em;
+        font-size: 1em;
+        font-weight: 600;
         color: #27374D;
     }
 
@@ -53,17 +257,6 @@
         background-color: white;
     }
 
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-
-    i{
-        font-size: 1.15em;
-        color: #27374D;
-        cursor: pointer;
-    }
-  
     .app-name {
         flex-grow: 1;
         margin: 0;
@@ -89,183 +282,126 @@
     }
 
 
-
-    .date-time {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
+    form{
         width: 100%;
-       
-        gap: 10px;
-    }
-    .item {
-        font-family: 'Urbanist', sans-serif;
-        font-size: 1em;
-        color: #526D82;
-        background-color: white;
-        border: 1px solid #ddd;
+        padding: 16px;
         border-radius: 8px;
-        padding: 10px;
-        margin: 5px 0;
-        width: 50%;
-        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .main, .additional {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .name-group {
+        font-family: "Urbanist", sans-serif;
+        font-size: 1.2em;
+        font-style: bold;
+        color: #27374D;
+        margin-bottom: 12px;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
         
     }
-    .label {
-        font-weight: 500;
+
+    .form-group label {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.8em;
         color: #526D82;
-        margin: 0;
-    }
-
-    #current-day, #current-time {
-        font-weight: bold;
-        font-family: 'Urbanist', sans-serif;
-        font-size: 1.15em;
-        color: #27374D;
-        margin-top: 5px;
-    }
-
-    .search-bar {
-        position: relative;
+        font-weight: 500;
+        margin-bottom: 6px;
         width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: white;
     }
 
-    #search-input {
+
+    .form-group input, .form-group textarea {
         width: 100%;
-        padding: 12px 20px 12px 40px;
-        border: 1px solid #ddd;
+        padding: 12px;
+        border: 1px solid #ccc;
         border-radius: 8px;
         font-size: 0.8em;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #526D82;
+        color: #27374D;
         background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .form-group textarea {
+        resize: vertical;
+        height: 120px;
     }
 
-    #search-input:focus {
+    .form-group input:focus, .form-group textarea:focus {
         border-color: #27374D;
-        box-shadow: 0 0 5px rgba(39, 55, 77, 0.2);
+        box-shadow: 0 0 5px rgba(39, 55, 77, 0.3);
         outline: none;
     }
 
-    #search-button {
-        position: absolute;
-        top: 50%;
-        left: 12px;
-        transform: translateY(-50%);
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    #search-button i {
-        font-size: 1.2em;
-        color: #526D82;
-    }
-
-    .filter-btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: white;
+    .form-group select {
         width: 100%;
-        gap: 10px;
-    }
-
-    .filter-btn button {
-        padding: 10px 20px;
-        border: 1px solid #ddd;
+        padding: 12px;
+        border: 1px solid #ccc;
         border-radius: 8px;
         font-size: 0.8em;
-        color: #526D82;
+        color: #27374D;
         background-color: white;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-        flex-grow: 1;
-        text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center; 
+        background-size: 16px 16px;           
+        color: #27374D;                     
     }
-    .filter-btn button:hover {
-        background-color: #27374D;
-        color: white;
+    .form-group select:focus {
+        border-color: #27374D;
+        box-shadow: 0 0 5px rgba(39, 55, 77, 0.3);
+        outline: none;
     }
 
-    .filter-btn button.active {
-        background-color: #27374D;
-        color: white;
-        font-weight: 600;
-    }
-
-    .todo-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
+    .form-group select option {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        color: #27374D;
         background-color: white;
+    }
+
+
+    .form-group select option:checked {
+        background-color: #526D82;
+        color: white;
+        font-weight: bold;
+    }
+
+    .form-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
     
-    .todo-header button {
-        cursor: pointer;
-        font-size: 0.8em;
-        color: #526D82;
-        transition: background-color 0.3s, color 0.3s;
-        margin: 0;
+    .form-btn button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #27374D;
+        color: #fff;
         border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
     }
 
-    .todo-header button:hover {
-        color: #27374D;
-        font-weight: 600;
-        transform: scale(1.00);
+    .form-btn button:hover {
+        background-color: #526D82;
     }
 
-   .empty-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: #526D82;
-    text-align: center;
-    border: 0.1em dashed #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: white;
-    ;
-   }
-
-   #empty-icon {
-    font-size: 2em;
-    color: #27374D;
-   }
-   
-
-   .add-todo button {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
-    cursor: pointer;
-    font-size: 1em;
-    color: #526D82;
-    transition: background-color 0.3s, color 0.3s;
-   }
-
-   .add-todo button:hover {
-
-    background-color: #27374D;
-    color: white;
-   }
+    
 
 
 

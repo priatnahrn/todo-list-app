@@ -26,6 +26,60 @@
         </div>
     </section>
 
+    <section class="container">
+        <form action="">
+            <div class="main">
+                <h3 class="name-group">Main Information</h2>
+                <div class="form-group">
+                    <label for="task-title">Task Title</label>
+                    <input type="text" id="task-title" name="task-title" placeholder="Enter task title here" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="none" selected disabled>Select category</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="task-desc">Task Description</label>
+                    <textarea id="task-desc" name="task-desc" rows="4" placeholder="Enter task description"></textarea>
+                </div>
+            </div>
+            <div class="additional">
+                <h3 class="name-group">Additional Details</h2>
+                <div class="form-group">
+                    <label for="due-date">Due Date</label>
+                    <input type="date" id="due-date" name="due-date">
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority">
+                        <option value="none" selected disabled>Select priority</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reminder">Set Reminder</label>
+                    <input type="time" id="reminder" name="reminder">
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Enter any additional notes"></textarea>
+                </div>
+            </div>
+            <div class="form-btn">
+                <button type="submit">Add Todo</button>
+            </div>
+
+        </form>
+    </section>
+
 </body>
 
 </html>

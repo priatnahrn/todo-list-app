@@ -464,19 +464,135 @@
         transform: scale(1.00);
     }
 
+    
+
+    #todoList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .todo-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        border: #ddd 1px solid;
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 10px;
+    }
+
+    .todo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: white;
+        gap: 10px;
+    }
+
+    .todo-group{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin: 0;
+        padding: 0;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: #27374D;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='white' viewBox='0 0 16 18' xmlns='http://www.w3.org/2000/svg'><path d='M6 10.8L3.2 8l-1.4 1.4L6 13.6l8-8-1.4-1.4z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        border: none;
+    }
+    .todo-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        color: #27374D;
+        font-family: 'Urbanist', sans-serif;
+        text-transform: capitalize;
+    }
+
+    .todo-category {   
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        font-size: 12px;
+        color: #526D82;
+        text-transform: capitalize;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    .todo-meta {    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .todo-date {
+        font-size: 14px;
+        color: #526D82;
+        text-transform: capitalize;
+    }
+
+    .todo-priority{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-transform: capitalize;
+        padding:8px;
+        background-color: #27374D;
+        color: white;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+
+
    .empty-state {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     color: #526D82;
     text-align: center;
     border: 0.1em dashed #ddd;
     border-radius: 8px;
     padding: 20px;
     background-color: white;
-    ;
+   }
+
+   .empty-state p{
+    margin: 20px;
    }
 
    #empty-icon {
@@ -485,7 +601,10 @@
    }
    
 
-   .add-todo button {
+
+  
+
+   .add-todo-btn{
     padding: 8px 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -494,9 +613,11 @@
     font-size: 1em;
     color: #526D82;
     transition: background-color 0.3s, color 0.3s;
+    width: fit-content;
+    margin: auto;
    }
 
-   .add-todo button:hover {
+   .add-todo-btn:hover {
 
     background-color: #27374D;
     color: white;
